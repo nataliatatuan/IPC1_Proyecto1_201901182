@@ -10,7 +10,7 @@ package com.mycompany.proyecto1_ipc1;
 
 import java.util.ArrayList;
 
-//Bd debe herenciar a la clase Usuario para que jale
+//Base de datos debe herenciar a la clase Usuario 
 public class BaseDatos extends Usuario {
    
     //Datos para doctor
@@ -32,7 +32,7 @@ public class BaseDatos extends Usuario {
   
   
     public static void agregarcita(String[] cita) {
-        //Esto es lo que se ingresa en el arraylist
+        //Ingresar al arraylist
         citas.add(cita);
     }
     
@@ -46,7 +46,7 @@ public class BaseDatos extends Usuario {
         //Esto es lo que se ingresa en el arraylist
         Pacienteslst.add(paciente);
     }
-  //acá luego vamos a meter datos
+  //meter datos posteriomente
 
  
   

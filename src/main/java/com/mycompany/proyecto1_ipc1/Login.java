@@ -34,7 +34,7 @@ public class Login extends JFrame implements ActionListener, FocusListener {
     public Login() {
         
         //Agregamos un titulo
-        JLabel titleLabel = new JLabel("Bienvenido");
+        JLabel titleLabel = new JLabel("Welcome");
         titleLabel.setFont(new Font("sans-serif", Font.BOLD, 20)); // Establece el tipo de letra y el tamaño
         titleLabel.setBounds(200, 10, 200, 30); //pos x, pos y, ancho, alto
         this.add(titleLabel);
