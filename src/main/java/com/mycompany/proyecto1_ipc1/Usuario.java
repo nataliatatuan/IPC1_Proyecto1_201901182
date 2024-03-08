@@ -40,9 +40,9 @@ public class Usuario {
 
   
 
-//mis getters y setters para que el código pueda acceder a la info
+//getters y setters para que el código pueda acceder a la info
     //necesaria
-    Usuario(String string, String rodolfo, String morales, String jrodolfomc2002gmailcom, String masculino) {
+    Usuario(String string, String Natalia, String Tatuan, String nataliaixmatulgmailcom, String femenino) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
