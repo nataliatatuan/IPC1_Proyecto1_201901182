@@ -56,29 +56,30 @@ public class Login extends JFrame implements ActionListener, FocusListener {
 
         JLabel contralbl = new JLabel("contraseña:");
         contralbl.setFont(new Font("sans-serif", Font.BOLD, 12)); // Establece el tipo de letra y el tamaño
-        contralbl.setBounds(70, 180, 80, 25);
+        contralbl.setBounds(70, 170, 80, 30);
         this.add(contralbl);
 
         // Campo de texto para la contrasña
         contratxt = new JPasswordField("Contraseña");
         contratxt.setEchoChar((char) 0);
-        contratxt.setBounds(150, 180, 230, 25);
+        contratxt.setBounds(160, 170, 235, 30);
         contratxt.addFocusListener(this);
         this.add(contratxt);
 
         // Botón de inicio de sesión
         btnlogin = new JButton("Iniciar Sesión");
-        btnlogin.setBounds(275, 260, 150, 25); //Ajuste de posición
+        btnlogin.setBounds(285, 270, 160, 30); //Ajuste de posición
         btnlogin.setForeground(Color.WHITE); // Ajuste de color de letra
-        btnlogin.setBackground(new Color(75, 193, 31)); // Ajuste de color de boton, con color en RGB
+        btnlogin.setBackground(new Color(188, 143, 143)); // Ajuste de color de boton, con color en RGB
         btnlogin.addActionListener(this); // Agregamos un ActionListener al botón
         this.add(btnlogin);
 
-        // Botón de Registro
+        // Botón de Registro color: 202 225 255
         registrarmebtn = new JButton("Registrarse");
-        registrarmebtn.setBounds(75, 260, 150, 25); //Ajuste de posición
-        registrarmebtn.setBackground(new Color(214, 225, 50)); // Ajuste de color de boton, con color en RGB
-        registrarmebtn.addActionListener(this); // Agregamos un ActionListener al botón
+        registrarmebtn.setBounds(70, 270, 160, 30); //Ajuste de posición
+        registrarmebtn.setBackground(new Color(202, 225, 255)); // Ajuste de color de boton, con color en RGB
+        registrarmebtn.addActionListener(this); // se agrego un ActionListener al botón
+        
         this.add(registrarmebtn);
 
         JPanel panel = new JPanel();
@@ -87,8 +88,8 @@ public class Login extends JFrame implements ActionListener, FocusListener {
         setVisible(true);
     }
 
-    //Estos som mis metodos abstractos uwu
-    //Fin de mi clase   
+    //metodos abstractos
+    //Fin clase   
     @Override
     public void actionPerformed(ActionEvent e) {
 
