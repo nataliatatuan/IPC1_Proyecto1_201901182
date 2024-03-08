@@ -35,34 +35,34 @@ public class Login extends JFrame implements ActionListener, FocusListener {
         
         //Agregamos un titulo
         JLabel titleLabel = new JLabel("Welcome");
-        titleLabel.setFont(new Font("sans-serif", Font.BOLD, 20)); // Establece el tipo de letra y el tamaño
-        titleLabel.setBounds(200, 10, 200, 30); //pos x, pos y, ancho, alto
+        titleLabel.setFont(new Font("britannic bold", Font.BOLD, 22)); // Establece el tipo de letra y el tamaño
+        titleLabel.setBounds(220, 10, 200, 30); //pos x, pos y, ancho, alto
         this.add(titleLabel);
         setTitle("Formulario");
         setSize(600, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        // Etiqueta de texto para el nombre de usuario
-        JLabel usernameLabel = new JLabel("Codigo:");
-        usernameLabel.setFont(new Font("sans-serif", Font.BOLD, 12)); // Establece el tipo de letra y el tamaño
-        usernameLabel.setBounds(70, 140, 80, 25);
+        // texto para el nombre de usuario
+        JLabel usernameLabel = new JLabel("Código:");
+        usernameLabel.setFont(new Font("britannic bold", Font.BOLD, 16)); // Establece el tipo de letra y el tamaño
+        usernameLabel.setBounds(80, 140, 80, 25);
         this.add(usernameLabel);
 
-        // Campo de texto para el nombre de usuario
+        // texto para el nombre de usuario
         usuariotxt = new JTextField("codigo");
-        usuariotxt.setBounds(130, 140, 260, 25); //pos x, pos y, ancho, alto
+        usuariotxt.setBounds(170, 140, 260, 30); //pos x, pos y, ancho, alto
         usuariotxt.addFocusListener(this);
         this.add(usuariotxt);
 
-        JLabel contralbl = new JLabel("contraseña:");
-        contralbl.setFont(new Font("sans-serif", Font.BOLD, 12)); // Establece el tipo de letra y el tamaño
-        contralbl.setBounds(70, 170, 80, 30);
+        JLabel contralbl = new JLabel("Contraseña:");
+        contralbl.setFont(new Font("britannic bold", Font.BOLD, 16)); // Establece el tipo de letra y el tamaño
+        contralbl.setBounds(70, 170, 105, 30);
         this.add(contralbl);
 
         // Campo de texto para la contrasña
-        contratxt = new JPasswordField("Contraseña");
+        contratxt = new JPasswordField("contraseña");
         contratxt.setEchoChar((char) 0);
-        contratxt.setBounds(160, 170, 235, 30);
+        contratxt.setBounds(170, 170, 235, 30);
         contratxt.addFocusListener(this);
         this.add(contratxt);
 
@@ -75,7 +75,7 @@ public class Login extends JFrame implements ActionListener, FocusListener {
         this.add(btnlogin);
 
         // Botón de Registro color: 202 225 255
-        registrarmebtn = new JButton("Registrarse");
+        registrarmebtn = new JButton("Registro");
         registrarmebtn.setBounds(70, 270, 160, 30); //Ajuste de posición
         registrarmebtn.setBackground(new Color(202, 225, 255)); // Ajuste de color de boton, con color en RGB
         registrarmebtn.addActionListener(this); // se agrego un ActionListener al botón

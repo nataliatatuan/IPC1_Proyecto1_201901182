@@ -15,7 +15,7 @@ import java.awt.event.FocusListener;
 
 /**
  *
- * @author Felix
+ * @author Natalia Ixmatul
  */
 public class RegistroDelPaciente extends JFrame  implements ActionListener, FocusListener {
 
@@ -54,7 +54,7 @@ public class RegistroDelPaciente extends JFrame  implements ActionListener, Focu
                 
         //label para combobox
         JLabel comboboxlbl = new JLabel("Género");
-        comboboxlbl.setFont(new Font("Kristen ITC", Font.BOLD, 14)); // Establece el tipo de letra y el tamaño
+        comboboxlbl.setFont(new Font("Bahnschrift", Font.BOLD, 14)); // Establece el tipo de letra y el tamaño
         comboboxlbl.setBounds(70, 300, 80, 25);
         this.add(comboboxlbl);
         
@@ -64,6 +64,7 @@ public class RegistroDelPaciente extends JFrame  implements ActionListener, Focu
             cmbx = new JComboBox<>();
             // Agregar opciones predefinidas al JComboBox
             cmbx.setBounds(170, 300, 100, 25);
+            cmbx.setBackground(new Color(202, 225, 255));
             cmbx.addItem("Masculino");
             cmbx.addItem("Femenino");
             cmbx.addItem("Otro");
@@ -75,50 +76,57 @@ public class RegistroDelPaciente extends JFrame  implements ActionListener, Focu
         
 
         JLabel usernameLabel = new JLabel("Nombre:");
-        usernameLabel.setFont(new Font("Kristen ITC", Font.BOLD, 14)); // Establece el tipo de letra y el tamaño
+        usernameLabel.setFont(new Font("Bahnschrift", Font.BOLD, 14)); // Establece el tipo de letra y el tamaño
         usernameLabel.setBounds(70, 140, 80, 25);
+        
+        
         this.add(usernameLabel);
+         
 
         // Campo de texto para el nombre de usuario
-        nombreField = new JTextField("Nombre");
+        nombreField = new JTextField("nombre");
         nombreField.setBounds(170, 140, 260, 25);
+        nombreField.setBackground(new Color(202, 225, 255));
         nombreField.addFocusListener(this);
         this.add(nombreField);
 
         JLabel passwordLabel = new JLabel("Contraseña");
-        passwordLabel.setFont(new Font("Kristen ITC", Font.BOLD, 14)); // Establece el tipo de letra y el tamaño
+        passwordLabel.setFont(new Font("Bahnschrift", Font.BOLD, 14)); // Establece el tipo de letra y el tamaño
         passwordLabel.setBounds(70, 180, 100, 25);
         this.add(passwordLabel);
 
         // Campo de texto para el nombre de usuario
-        contraseñaField = new JPasswordField("Contraseña");
+        contraseñaField = new JPasswordField("contraseña");
         contraseñaField.setBounds(170, 180, 260, 25);
+        contraseñaField.setBackground(new Color(202, 225, 255));
         contraseñaField.addFocusListener(this);
         this.add(contraseñaField);
 
         JLabel apellidoLabel = new JLabel("Apellido:");
-        apellidoLabel.setFont(new Font("Kristen ITC", Font.BOLD, 14)); // Establece el tipo de letra y el tamaño
+        apellidoLabel.setFont(new Font("Bahnschrift", Font.BOLD, 14)); // Establece el tipo de letra y el tamaño
         apellidoLabel.setBounds(70, 220, 80, 25);
         this.add(apellidoLabel);
         
         
    
 
-        // Campo de texto para el nombre de usuario
-        apellidoField = new JTextField("Apellido");
+        // Campo de texto para el nombre de usuario 
+        apellidoField = new JTextField("apellido");
         apellidoField.setBounds(170, 220, 260, 25);
+        apellidoField.setBackground(new Color(202, 225, 255));
         apellidoField.addFocusListener(this);
         this.add(apellidoField);
         
         
               JLabel edadlbl = new JLabel("Edad:");
-        edadlbl.setFont(new Font("Kristen ITC", Font.BOLD, 14)); // Establece el tipo de letra y el tamaño
+        edadlbl.setFont(new Font("Bahnschrift", Font.BOLD, 14)); // Establece el tipo de letra y el tamaño
         edadlbl.setBounds(70, 256, 80, 25);
         this.add(edadlbl);
         
                 // Campo de texto para el nombre de usuario
         edadtxt = new JTextField("edad");
         edadtxt.setBounds(170, 256, 260, 25);
+        edadtxt.setBackground(new Color(202, 225, 255));
         edadtxt.addFocusListener(this);
         this.add(edadtxt);
         
@@ -131,7 +139,7 @@ public class RegistroDelPaciente extends JFrame  implements ActionListener, Focu
         // Botón de Registro color : 202 225 255
         registroButton = new JButton("Registrarse");
         registroButton.setBounds(75, 350, 150, 25); //Ajuste de posición
-        registroButton.setBackground(new Color(202, 225, 255)); // Ajuste de color de boton, con color en RGB
+        registroButton.setBackground(new Color(188, 143, 143)); // Ajuste de color de boton, con color en RGB
         registroButton.addActionListener(this); // Agregamos un ActionListener al botón
         this.add(registroButton);
         

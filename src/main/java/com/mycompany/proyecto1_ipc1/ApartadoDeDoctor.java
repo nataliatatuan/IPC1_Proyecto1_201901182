@@ -37,7 +37,7 @@ public class ApartadoDeDoctor extends JFrame implements ActionListener, FocusLis
 
     public  ApartadoDeDoctor() {
         // Configurar el JFrame
-        this.setTitle("Bienvenido Doctor House");
+        this.setTitle("Bienvenido Doctor");
         setSize(900, 600);
         this.setResizable(false);
         // this.setExtendedState(MAXIMIZED_BOTH);
@@ -54,7 +54,7 @@ public class ApartadoDeDoctor extends JFrame implements ActionListener, FocusLis
 // C o n t e n i d o   P a n e l   1          
         //texto codigo
         // Campo de texto para el nombre de usuario
-        citatxt = new JTextField("cita");
+        citatxt = new JTextField("Cita");
         citatxt.setBounds(700, 130, 150, 25);
         citatxt.addFocusListener(this);
         panel1.add(citatxt);

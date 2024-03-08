@@ -20,13 +20,9 @@ public class BaseDatos extends Usuario {
 
     
     
-//Acá puedo herenciar en mi array datos
-//que vengan de clases Hijas    
-//en este caso la clase padre es Usuario
-//la hija sería doctor , esto me deja meter datos de doctor en el tipo usuario
+//herenciar en mi array datos
 
-//el tipo de String que es
-//Uso matriz para que sea mas facil jalar la posicion del arraylist
+//tipo de String 
   static ArrayList<Usuario> Pacienteslst = new ArrayList<>();
   static ArrayList<String[]> citas = new ArrayList<>();
   
@@ -46,7 +42,6 @@ public class BaseDatos extends Usuario {
         //Esto es lo que se ingresa en el arraylist
         Pacienteslst.add(paciente);
     }
-  //meter datos posteriomente
 
  
   

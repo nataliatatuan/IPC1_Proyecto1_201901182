@@ -79,9 +79,9 @@ public class ApartadoDeUsuario extends JFrame implements ActionListener, FocusLi
 //
 //
 // ♣ ♣ C o  n t e n i d o   P A N E L   1  ♣ ♣
-        JLabel motivocitalbl = new JLabel("Motivo de la cita");
-        motivocitalbl.setFont(new Font("sans-serif", Font.BOLD, 20)); // Establece el tipo de letra y el tamaño
-        motivocitalbl.setBounds(200, 10, 200, 30); //pos x, pos y, ancho, alto
+        JLabel motivocitalbl = new JLabel("Motivo de consulta");
+        motivocitalbl.setFont(new Font("britannic bold", Font.BOLD, 18)); // Establece el tipo de letra y el tamaño
+        motivocitalbl.setBounds(235, 10, 200, 30); //pos x, pos y, ancho, alto
         panel1.add(motivocitalbl);
         setTitle("Formulario");
         setSize(800, 600);
@@ -90,28 +90,29 @@ public class ApartadoDeUsuario extends JFrame implements ActionListener, FocusLi
         // Campo de texto para el nombre de usuario
         motivotxt = new JTextField("");
         motivotxt.setBounds(45, 75, 500, 80);
+        motivotxt.setBackground(new Color(188, 143, 143));
         motivotxt.addFocusListener(this);
         panel1.add(motivotxt);
 
         JLabel especialidadlbl = new JLabel("Especialidad:");
-        especialidadlbl.setFont(new Font("Kristen ITC", Font.BOLD, 14)); // Establece el tipo de letra y el tamaño
+        especialidadlbl.setFont(new Font("britannic bold", Font.BOLD, 14)); // Establece el tipo de letra y el tamaño
         especialidadlbl.setBounds(50, 200, 150, 25);
         panel1.add(especialidadlbl);
 
         especialidadcmbx = new JComboBox<>();
         // Agregar opciones predefinidas al JComboBox
         especialidadcmbx.setBounds(160, 200, 125, 25);
-        especialidadcmbx.addItem("Ginecologia");
-        especialidadcmbx.addItem("Pediatria");
-        especialidadcmbx.addItem("Oncologia");
-        especialidadcmbx.addItem("Gediatria");
-        especialidadcmbx.addItem("Dermatologia");
+        especialidadcmbx.addItem("Pediatría");
+        especialidadcmbx.addItem("Médico General");
+        especialidadcmbx.addItem("Cardiología");
+        especialidadcmbx.addItem("Nefólogo");
+        especialidadcmbx.addItem("Psiquiatría");
         especialidadcmbx.addActionListener(this);
 
         panel1.add(especialidadcmbx);
 
         JLabel doctorlbl = new JLabel("Doctor:");
-        doctorlbl.setFont(new Font("Kristen ITC", Font.BOLD, 14)); // Establece el tipo de letra y el tamaño
+        doctorlbl.setFont(new Font("britannic bold", Font.BOLD, 14)); // Establece el tipo de letra y el tamaño
         doctorlbl.setBounds(50, 250, 150, 25);
         panel1.add(doctorlbl);
 
@@ -123,56 +124,56 @@ public class ApartadoDeUsuario extends JFrame implements ActionListener, FocusLi
         panel1.add(doctorcmbx);
 
         JLabel horariotxt = new JLabel("Horario de citas dispobibles:");
-        horariotxt.setFont(new Font("Kristen ITC", Font.BOLD, 14)); // Establece el tipo de letra y el tamaño
+        horariotxt.setFont(new Font("britannic bold", Font.BOLD, 14)); // Establece el tipo de letra y el tamaño
         horariotxt.setBounds(30, 300, 275, 25);
         panel1.add(horariotxt);
 
         JLabel fechatxt = new JLabel("Fecha:");
-        fechatxt.setFont(new Font("Kristen ITC", Font.BOLD, 14)); // Establece el tipo de letra y el tamaño
+        fechatxt.setFont(new Font("britannic bold", Font.BOLD, 14)); // Establece el tipo de letra y el tamaño
         fechatxt.setBounds(45, 350, 275, 25);
         panel1.add(fechatxt);
 
         fechacmbx = new JComboBox<>();
         // Agregar opciones predefinidas al JComboBox
         fechacmbx.setBounds(110, 350, 125, 25);
-        fechacmbx.addItem("15 marzo");
-        fechacmbx.addItem("20 feberero");
+        fechacmbx.addItem("14 marzo");
+        fechacmbx.addItem("30 marzo");
         fechacmbx.addItem("3 abril");
         //
         panel1.add(fechacmbx);
 
         JLabel horatxt = new JLabel("Hora:");
-        horatxt.setFont(new Font("Kristen ITC", Font.BOLD, 14)); // Establece el tipo de letra y el tamaño
+        horatxt.setFont(new Font("britannic bold", Font.BOLD, 14)); // Establece el tipo de letra y el tamaño
         horatxt.setBounds(275, 350, 275, 25);
         panel1.add(horatxt);
 
         horacmbx = new JComboBox<>();
         // Agregar opciones predefinidas al JComboBox
         horacmbx.setBounds(350, 350, 125, 25);
-        horacmbx.addItem("2 AM");
-        horacmbx.addItem("3 Pm");
-        horacmbx.addItem("6 AM");
+        horacmbx.addItem("8 AM");
+        horacmbx.addItem("9 AM");
+        horacmbx.addItem("3 PM");
         //
         panel1.add(horacmbx);
 
         // Botón de Registro
         generarbtn = new JButton("Generar Cita");
         generarbtn.setBounds(500, 350, 150, 25); //Ajuste de posición
-        generarbtn.setBackground(new Color(214, 225, 50)); // Ajuste de color de boton, con color en RGB
+        generarbtn.setBackground(new Color(188, 143, 143)); // Ajuste de color de boton, con color en RGB
         generarbtn.addActionListener(this); // Agregamos un ActionListener al botón
         panel1.add(generarbtn);
 
-        // Botón de DOCTORES
+        // Botón de DOCTORES 
         doctoresbtn = new JButton("Mostrar doctores");
         doctoresbtn.setBounds(350, 200, 150, 25); //Ajuste de posición
-        doctoresbtn.setBackground(new Color(214, 225, 50)); // Ajuste de color de boton, con color en RGB
+        doctoresbtn.setBackground(new Color(188, 143, 143)); // Ajuste de color de boton, con color en RGB
         doctoresbtn.addActionListener(this); // Agregamos un ActionListener al botón
         panel1.add(doctoresbtn);
 
         // Botón de Horarios
         horariosbtn = new JButton("Mostrar Horarios");
         horariosbtn.setBounds(350, 250, 150, 25); //Ajuste de posición
-        horariosbtn.setBackground(new Color(214, 225, 50)); // Ajuste de color de boton, con color en RGB
+        horariosbtn.setBackground(new Color(188, 143, 143));// Ajuste de color de boton, con color en RGB
         horariosbtn.addActionListener(this); // Agregamos un ActionListener al botón
         panel1.add(horariosbtn);
 
@@ -185,7 +186,7 @@ public class ApartadoDeUsuario extends JFrame implements ActionListener, FocusLi
 //
 //
         JLabel historiallbl = new JLabel("Historial de citas:");
-        historiallbl.setFont(new Font("sans-serif", Font.BOLD, 20)); // Establece el tipo de letra y el tamaño
+        historiallbl.setFont(new Font("BRITANNIC BOLD", Font.BOLD, 17)); // Establece el tipo de letra y el tamaño
         historiallbl.setBounds(70, 10, 200, 30); //pos x, pos y, ancho, alto
         panel2.add(historiallbl, BorderLayout.CENTER);
 
